@@ -1,0 +1,35 @@
+{
+  "name": "portafolio",
+  "version": "0.0.1",
+  "description": "Portafolio Profesional",
+  "main": "src/index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.8.3",
+    "babel-jest": "^25.1.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jest": "^23.6.0",
+    "htmlhint": "^0.11.0",
+    "jest": "^25.1.0",
+    "serve": "^11.3.0",
+    "stylelint": "^13.0.0",
+    "stylelint-config-recommended": "^3.0.0"
+  },
+  "scripts": {
+    "test": "jest --coverage",
+    "build": "babel src -d lib",
+    "start": "serve src/",
+    "eslint": "eslint --ext .js src/ test/",
+    "pretest": "npm run eslint"
+  },
+  "keywords": [
+    "Portafolio"
+  ],
+  "author": "Paola Sonia",
+  "license": "MIT"
+}
